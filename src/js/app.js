@@ -51,7 +51,7 @@ import * as flsFunctions from "./files/functions.js";
 //===================//
 
 //Попапы. Сниппет (HTML): pl
-// import './libs/popup.js'
+import './libs/popup.js'
 //===================//
 
 /* Динамический адаптив */

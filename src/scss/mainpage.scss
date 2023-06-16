@@ -36,7 +36,7 @@
 	justify-content: center;
 	gap: 7px;
 	min-width: 130px;
-	background-color: #FFAB08;
+	background-color: #FFAB08;	//!!!
 	padding: 9px 14px;
 	border-radius: 50px;
 	&:hover{
@@ -49,4 +49,120 @@
 		&__name {
 			line-height: 137.5%; /* 22/16 */
 		}
+}
+
+// main-content ====================================================================================================//
+
+.main-content {
+	margin-bottom: 100px;	//!!!
+
+	@include adaptiveValue("padding-top", 50, 40);
+
+	&__container {
+		display: flex;
+		gap: 30px;
+	}
+}
+
+.market-basket {
+	min-width: 300px;
+	background-color: #F86310;
+	@media (max-width: 992px) {
+		display: none;
+	}
+}
+
+.goods {
+	
+	&__content {
+	}
+	
+	&__burger {
+	}
+}
+
+// goods ====================================================================================================//
+
+.content-goods {
+
+	&__title {
+		@include adaptiveValue("font-size", 40, 30);
+		font-weight: 600;
+		line-height: 120%;
+		@include adaptiveValue("padding-bottom", 25, 20);
+	}
+
+	&__goods {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		@media (max-width: 500px) {
+			justify-content: space-between;
+		}
+	}
+
+	&__card {
+		flex: 0 1 33.333%;
+		@media (max-width: 500px) {
+			flex: 0 1 50%;
+		}
+		margin-bottom: 25px;
+	}
+}
+
+.card-content-goods {
+
+	&__content {
+		padding: 12px;
+		@media (max-width: 1200px) {
+			padding: 5px;
+		}
+		transition: all 0.2s ease 0s;
+		&:hover {
+			.card-content-goods__button {
+				background-color: #FFAB08;
+			}
+			background-color: #f9f9f9;
+		}
+	}
+
+	&__image {
+		img {
+			max-width: 100%;
+			border-radius: 13px;
+		}
+		padding-bottom: 16px;
+	}
+
+	&__price {
+		@include adaptiveValue("font-size", 24, 18);
+		font-weight: 600;
+		line-height: 100%;
+		padding-bottom: 8px;
+	}
+
+	&__description {
+		line-height: 130%;
+		@include adaptiveValue("padding-bottom", 30, 20);
+	}
+
+	&__weight {
+		font-weight: 600;
+		line-height: 130%;
+		color: #B1B1B1;
+		padding-bottom: 8px;
+	}
+
+	&__button {
+		background-color: #F2F2F3;
+		display: flex;
+		justify-content: center;
+		width: 100%;
+		padding: 10px 0px;
+		border-radius: 12px;
+		transition: all 0.2s ease 0s;
+		&:hover {
+			background-color: #F86310 !important;
+		}
+	}
 }

@@ -1,1 +1,142 @@
 // Заголовки, общие БЄМ блоки и проче...
+
+// popup-goods ====================================================================================================//
+
+.popup-goods {
+	max-width: 684px;
+	//margin: 0 auto;
+	background-color: #fff;
+	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+	border-radius: 24px;
+	padding: 24px 24px 36px 24px;
+	@media (max-width: 700px) {
+		padding: 15px 15px 20px 15px;
+	}
+
+	&__title {
+		@include adaptiveValue("font-size", 40, 30);
+		font-weight: 600;
+		line-height: 120%;
+		@include adaptiveValue("padding-bottom", 24, 20);
+	}
+
+	&__body {
+		display: flex;
+		gap: 16px;
+		@media (max-width: 530px) {
+			flex-direction: column;
+		}
+	}
+
+	&__image {
+		img {
+			border-radius: 13px;
+			width: 276px;
+		}
+		@media (max-width: 530px) {
+			text-align: center;
+			img {
+				max-width: 100%;
+			}
+		}
+	}
+
+	&__description {
+		line-height: 130%;
+	}
+
+	&__order {
+	}
+}
+.description-popup-goods {
+
+	&__text {
+		padding-bottom: 12px;
+	}
+
+	&__composition {
+		font-size: 14px;
+		padding-bottom: 6px;
+		p:first-child {
+			font-weight: 600;
+			padding-bottom: 4px;
+			font-size: 16px;
+		}
+	}
+
+	&__weight {
+		font-size: 14px;
+		line-height: 130%;
+		color: #B1B1B1;
+	}
+}
+.order-popup-goods {
+	display: flex;
+	align-items: center;
+	@include adaptiveValue("margin-top", 40, 30);
+
+	&__button {
+		flex: 0 1 276px;
+		flex-direction: column;
+		background-color: #f2f2f3;
+		padding: 9px 0px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-radius: 12px;
+		transition: background-color 0.3s ease 0s;
+		&:hover{
+			background-color: #ff7020;
+		}
+	}
+
+	&__count {
+		padding-left: 16px;
+		flex-direction: column;
+		flex: 1 1 auto;
+	}
+
+	&__count-box {
+		background-color: #f2f2f3;
+		width: 84px;
+		height: 40px;
+		display: flex;
+		gap: 4px;
+		justify-content: center;
+		align-items: center;
+		border-radius: 12px;
+		span{
+			cursor: pointer;
+			padding: 10px 6px;
+			user-select: none;
+			transition: all 0.3s ease 0s;
+			&:first-child {
+				padding: 12px 10px 12px 10px;
+				border-radius: 12px 0 0 12px;
+				&:hover{
+					background-color: #FFAB08;
+				}
+			}
+			&:last-child{
+				padding: 12px 10px 12px 10px;
+				border-radius: 0px 12px 12px 0;
+				&:hover{
+					background-color: #FFAB08;
+				}
+			}
+			&:first-child:active:active{
+				background-color: #ff7020;
+			}
+			&:last-child:active:active{
+				background-color: #ff7020;
+			}
+		}
+	}
+
+	&__bill {
+		flex-direction: column;
+		font-weight: 600;
+		line-height: 130%;
+		padding-left: 15px;
+	}
+}
