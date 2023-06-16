@@ -1,0 +1,195 @@
+//====================================================================================================
+//====================================================================================================
+
+.footer {
+	@include adaptiveValue("padding-top", 50, 40);
+	@include adaptiveValue("padding-bottom", 40, 30);
+
+	&__container {
+	}
+
+	&__wrapper {
+		display: flex;
+		justify-content: space-between;
+		margin: 0px -15px;
+		@media (max-width: 767px) {
+			flex-wrap: wrap;
+		}
+		@media (max-width: 400px) {
+		}
+	}
+
+	&__copy {
+		flex: 0 1 50%;
+		padding: 0px 15px;
+		@media (max-width: 992px) {
+			flex: 0 1 40%;
+		}
+		@media (max-width: 767px) {
+			flex: 0 1 100%;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			order: 3;
+		}
+		@media (max-width: 400px) {
+			order: -1;
+		}
+	}
+
+	&__order {
+		flex: 0 1 25%;
+		padding: 0px 15px;
+		@media (max-width: 992px) {
+			flex: 0 1 30%;
+		}
+		@media (max-width: 767px) {
+			flex: none;
+		}
+		@media (max-width: 400px) {
+			flex: 0 1 100%;
+			text-align: center;
+		}
+	}
+
+	&__social {
+		flex: 0 1 25%;
+		padding: 0px 15px;
+		@media (max-width: 992px) {
+			flex: 0 1 30%;
+		}
+		@media (max-width: 767px) {
+			flex: none;
+		}
+		@media (max-width: 400px) {
+			flex: 0 1 100%;
+			text-align: center;
+		}
+	}
+}
+.copy-footer {
+
+	@media (max-width: 767px) {
+		@include adaptiveValue("padding-top", 40, 30);
+	}
+	&__logo {
+		display: block;
+		path{
+			transition: all 0.3s ease 0s;
+		}
+		svg:hover {
+			path {
+				fill: #F86310;
+			}
+		}
+		svg {
+			@media (max-width: 992px) {
+				max-width: 200px;
+			}
+		}
+		@media (min-width: 767px) {
+			@include adaptiveValue("padding-bottom", 60, 25);
+		}
+		@media (max-width: 400px) {
+			margin: 0 auto;
+			padding-bottom: 25px;
+		}
+	}
+
+	&__copy {
+		@media (max-width: 400px) {
+			display: flex;
+			flex: 0 1 100%;
+			justify-content: center;
+			padding-top: 25px;
+		}
+	}
+}
+
+.order-footer {
+	@media (max-width: 400px) {
+		padding-bottom: 35px;
+	}
+	@media (min-width: 767px) {
+		margin-top: 25px;
+	}
+
+	&__title {
+		@include adaptiveValue("font-size", 24, 18);
+		line-height: 100%;
+		padding-bottom: 24px;
+		@media (max-width: 400px) {
+			padding-bottom: 15px;
+		}
+	}
+
+	&__call {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+		line-height: 130%;
+		//padding-left: 30px;
+		//padding: 5px 0px 3px 30px;
+		//background: url('@img/footer/call.svg') 0 -2px no-repeat;
+		path{
+			transition: all 0.3s ease 0s;
+		}
+		&:hover{
+			path {
+				fill: #F86310;
+			}
+			.order-footer__tel {
+				color: #F86310
+			}
+		}
+		@media (max-width: 400px) {
+			justify-content: center;
+		}
+	}
+
+	&__tel {
+		transition: all 0.3s ease 0s;
+	}
+
+	&__icon {
+
+	}
+}
+
+.social-footer {
+
+	&__title {
+		@include adaptiveValue("font-size", 24, 18);
+		line-height: 100%;
+		padding-bottom: 24px;
+		@media (max-width: 400px) {
+			padding-bottom: 12px;
+		}
+	}
+
+	&__list {
+		display: flex;
+		li:first-child{
+			margin-right: 16px;
+		}
+		@media (max-width: 400px) {
+			display: flex;
+			justify-content: center;
+			flex-wrap: wrap;
+		}
+	}
+
+	&__item {
+	}
+	@media (min-width: 767px) {
+		margin-top: 25px;
+	}
+	path{
+		transition: all 0.3s ease 0s;
+	}
+	li:hover {
+		path {
+			fill: #F86310;
+		}
+	}
+}

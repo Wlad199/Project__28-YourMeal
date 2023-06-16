@@ -1,0 +1,335 @@
+  //!!!
+  // Нижнее подчеркивание при наведении ====================================================================================================//
+  /*
+.menu-link {
+	position: relative;
+	&::after{
+		content: "";
+		position: absolute;
+		left: 50%;
+		width: 0;
+		height: 1px;
+		background-color: #007397;
+		bottom: 0;
+		transition: all 0.3s ease 0s;
+	}
+	&:hover{
+		color: #007397;
+		&::after {
+			left: 0;
+			width: 100%;
+		}
+	}
+}
+*/
+
+  //!!!
+/// backdrop-filter ====================================================================================================//
+	//backdrop-filter: blur(5px);
+
+  //!!!
+  // Анимация кнопки ====================================================================================================//
+  /*
+.button {
+	position: relative;
+	background-color: #007397;
+	span {
+		z-index: 2;// Текст кнопки завернуть в спан и навесить z-index
+	}
+	&::after {
+		content: "";
+		width: 0;
+		height: 100%;
+		left: 50%;
+		top: 0;
+		position: absolute;
+		transition: all 0.3s ease 0s;
+		background-color: #006688;
+	}
+	&:hover {
+		&::after {
+			left: 0;
+			width: 100%;
+		}
+	}
+}
+*/
+  //  ====================================================================================================//
+
+
+
+  //!!!
+  // figures ====================================================================================================//
+  /*
+.triangle-up {
+	width: 0;
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 100px solid #000;
+}
+.triangle-down {
+	width: 0;
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-top: 100px solid #000;
+}
+.triangle-left {
+	width: 0;
+	height: 0;
+	border-right: 100px solid #000;
+	border-bottom: 50px solid transparent;
+	border-top: 50px solid transparent;
+}
+.triangle-right {
+	width: 0;
+	height: 0;
+	border-left: 100px solid #000;
+	border-top: 50px solid transparent;
+	border-bottom: 50px solid transparent;
+}
+.parallelogram {
+	width: 200px;
+	height: 100px;
+	background-color: #000;
+	transform: skew(15deg);
+
+}
+.trapezoid {
+	width: 200px;
+	border-bottom: 100px solid #000;
+	border-left: 30px solid transparent;
+	border-right: 30px solid transparent;
+}
+*/
+
+  //  ====================================================================================================//
+  //  ====================================================================================================//
+  //  ====================================================================================================//
+  //  ====================================================================================================//
+  //  ====================================================================================================//
+
+  //!!!
+  // Burger (**==MW==**) ====================================================================================================//
+  /*
+// Запрещаем скролл основного контента при открытом бургере
+body._lock {
+	overflow: hidden;
+}
+// Прячем бургер на больших экранах
+.menu__icon {
+	display: none;
+}
+
+@media (max-width: $mobile) {
+	.menu__icon {
+		display: block;
+		position: relative;
+		width: rem(30);
+		height: rem(18);
+		cursor: pointer;
+		z-index: 5;
+	// Три полоски
+		span,
+		&::before,
+		&::after {
+			content: "";
+			transition: all 0.3s ease 0s;
+			right: 0;
+			position: absolute;
+			width: 100%;
+			height: rem(2); //10%
+			background-color: #fff;
+		}
+		&::before {
+			top: 0;
+		}
+		&::after {
+			bottom: 0;
+		}
+		span {
+			top: calc(50% - rem(1)); //transform: scale(1) translate(0px -50%);
+		}
+	}
+
+	.menu__icon._active {
+		span {
+			width: 0;
+		}
+		&::before,
+		&::after {
+		}
+		&::before {
+			top: calc(50% - rem(1));
+			transform: rotate(-45deg);
+		}
+		&::after {
+			bottom: calc(50% - rem(1));
+			transform: rotate(45deg);
+		}
+	}
+
+	.menu__body {
+		position: fixed;
+		top: 0;
+		left: -100%;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.9);
+		padding: 100px 30px 30px 30px;
+		transition: left 0.3s ease 0s;
+		overflow: auto; // Добавляем скролл
+
+		// Рисуем шапку
+		&::before {
+			content: '';
+			position: fixed;
+			width: 100%;
+			top: 0;
+			left: 0;
+			height: 100px; // Высота шапки
+			background-color: #e53e31;
+			z-index: 2;
+		}
+	}
+
+	// Выезд меню-бургера при нажатии на бургер
+	.menu__body._active {
+		left: 0;
+	}
+}
+
+//  =============//
+
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: #e53e31;
+	z-index: 10;
+
+	&__container {
+		max-width: 1200px;
+		margin: 0 auto;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		height: 100px;
+	}
+
+	&__logo {
+		position: relative;
+		height: 70px;
+		width: 70px;
+		border-radius: 50%;
+		background-color: #fff;
+		z-index: 5;
+	}
+}
+.menu {
+
+	&__list {
+		padding: 30px 0px 0px 0px;
+		font-size: 24px;
+		color: #fff;
+		li {
+		margin: 0px 0px 20px 0px;
+		}
+		@media (min-width: 767px) {
+			display: flex;
+			li {
+				&:not(:last-child){
+					margin: 0px 20px 0px 0px;
+				}
+			}
+		}
+	}
+}
+.menu-link {
+	&:hover {
+		text-decoration: underline;
+	}
+}
+  //  ====================================================================================================//
+  //  ====================================================================================================//
+  //  ====================================================================================================//
+  //  ====================================================================================================//
+  //  ====================================================================================================//
+
+//!!!//!!!//!!!
+// Стилизация чек-боксов ====================================================================================================//
+
+			<div class="test">
+			<label>
+				<input class="check-box" type="checkbox">
+				<span class="check-style"></span>
+				checkbox
+			</label>
+			<label>
+				<input class="check-box" type="checkbox" checked>
+				<span class="check-style"></span>
+				checkbox checked
+			</label>
+			<label>
+				<input class="check-box" type="checkbox" disabled>
+				<span class="check-style"></span>
+				checkbox disabled
+			</label>
+			<label>
+				<input class="check-box" type="checkbox" checked disabled>
+				<span class="check-style"></span>
+				checkbox checked disabled
+			</label>
+		</div>
+		
+// css ====================================================================================================//
+label {
+	display: block;
+	margin-bottom: 5px;
+	user-select: none;
+}
+
+.check-box { 	//!!! Убрать чек-боксы
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+	padding-left: 20px;
+}
+
+.check-style { 	//!!! Рисуем новые чек-боксы
+	position: absolute;
+	width: 16px;
+	height: 16px;
+	border: 2px solid #0ea36e;
+	margin-left: -20px;
+}
+
+.check-box:checked + .check-style::before { 	//!!! При нажатии спану добав заливка
+	content: '';
+	width: 8px;
+	height: 8px;
+	background-color: #0ea36e;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.check-box:disabled + .check-style {	//!!! Стилизация заблоченных чек-боксов
+	border-color: #ccc;
+}
+.check-box:checked:disabled + .check-style::before { 	//!!! Стилизация заблоченных + выбранных чек-боксов
+	border-color: #ccc;
+	background-color: #ccc;
+}
+.check-box:focus + .check-style { 	//!!! Добав фокус
+	box-shadow: 0 0 0 2px #000;
+}
+	//  ====================================================================================================//
+  //  ====================================================================================================//
+  //  ====================================================================================================//
+  //  ====================================================================================================//
+  //  ====================================================================================================//
