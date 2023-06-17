@@ -66,7 +66,6 @@
 
 .market-basket {
 	min-width: 300px;
-	background-color: #F86310;
 	@media (max-width: 992px) {
 		display: none;
 	}
@@ -164,5 +163,137 @@
 		&:hover {
 			background-color: #F86310 !important;
 		}
+	}
+}
+
+// market-basket ====================================================================================================//
+
+.market-basket {
+
+	&__body {
+		padding: 24px 16px;
+	}
+
+	&__head {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__order {
+	}
+
+	&__card {
+	}
+
+	&__total {
+	}
+
+	&__button {
+		background-color: #FFAB08;
+		height: 40px;
+		width: 100%;
+		border-radius: 12px;
+		transition: all 0.3s ease 0s;
+		&:hover {
+			background-color: #F86310;
+		}
+	}
+
+	&__free-delivery {
+	}
+}
+/////////////////////////
+
+.head-market-basket {
+	padding-bottom: 12px;
+	border-bottom: 1px solid #F2F2F3;
+
+	&__title {
+		@include adaptiveValue("font-size", 24, 18);
+		font-weight: 600;
+		line-height: 100%;
+	}
+
+	&__count-goods {
+		font-size: 12px;
+		background-color: #F2F2F3;
+		padding: 5px 16px;
+		border-radius: 6px;
+	}
+}
+////////////////////////////
+
+.card-market-basket {
+	display: flex;
+	align-items: center;
+	padding: 14px 0px;
+	border-bottom: 1px solid #F2F2F3;
+	transition: all 0.3s ease 0s;
+	&:hover{
+		background-color: #fbfbfb;
+	}
+
+
+	&__image {
+		img {
+			//max-width: 100%;
+			width: 64px;
+		}
+	}
+
+	&__definition {
+		padding-left: 6px;
+		font-size: 12px;
+		line-height: 133.333333%; /* 16/12 */
+	}
+
+	&__count {
+	}
+}
+////////////////////////////
+
+.definition-card {
+
+	&__name {
+	}
+
+	&__weight {
+		color: #B1B1B1;
+	}
+
+	&__price {
+	}
+	div {
+		padding-bottom: 2px;
+	}
+}
+///////////////////////
+
+.total-market-basket {
+	margin-top: 16px;
+	margin-bottom: 24px;
+	display: flex;
+	justify-content: space-between;
+	line-height: 130%;
+
+	&__text {
+	}
+
+	&__value {
+	}
+}
+/////////////////////////
+.free-delivery-market-basket {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	padding-top: 15px;
+
+	&__icon {
+	}
+
+	&__text {
+		font-size: 14px;
 	}
 }

@@ -79,7 +79,78 @@
 	</div>
 	<div class="main-content">
 		<div class="main-content__container">
-			<section class="market-basket"></section>
+			<section class="market-basket">
+				<div class="market-basket__body">
+					<div class="market-basket__head head-market-basket">
+						<h3 class="head-market-basket__title">Корзина</h3>
+						<div class="head-market-basket__count-goods">0</div>
+					</div>
+					<div class="market-basket__order">
+						<div class="market-basket__card card-market-basket">
+							<div class="card-market-basket__image">
+								<img src="@img/basket/01.png" alt="image">
+							</div>
+							<div class="card-market-basket__definition definition-card">
+								<div class="definition-card__name">Супер сырный</div>
+								<div class="definition-card__weight">512г</div>
+								<div class="definition-card__price">550₽</div>
+							</div>
+							<div class="card-market-basket__count order-popup-goods__count">
+								<div class="order-popup-goods__count-box">
+									<span>-</span>
+									<span>0</span>
+									<span>+</span>
+								</div>
+							</div>
+						</div>
+						<div class="market-basket__card card-market-basket">
+							<div class="card-market-basket__image">
+								<img src="@img/basket/02.png" alt="image">
+							</div>
+							<div class="card-market-basket__definition definition-card">
+								<div class="definition-card__name">Картошка фри</div>
+								<div class="definition-card__weight">180г</div>
+								<div class="definition-card__price">245₽</div>
+							</div>
+							<div class="card-market-basket__count order-popup-goods__count">
+								<div class="order-popup-goods__count-box">
+									<span>-</span>
+									<span>0</span>
+									<span>+</span>
+								</div>
+							</div>
+						</div>
+						<div class="market-basket__card card-market-basket">
+							<div class="card-market-basket__image">
+								<img src="@img/basket/03.png" alt="image">
+							</div>
+							<div class="card-market-basket__definition definition-card">
+								<div class="definition-card__name">Жгучий хот-дог</div>
+								<div class="definition-card__weight">245г</div>
+								<div class="definition-card__price">239₽</div>
+							</div>
+							<div class="card-market-basket__count order-popup-goods__count">
+								<div class="order-popup-goods__count-box">
+									<span>-</span>
+									<span>0</span>
+									<span>+</span>
+								</div>
+							</div>
+						</div>
+						<div class="market-basket__total total-market-basket">
+							<div class="total-market-basket__text">Итого</div>
+							<div class="total-market-basket__value">1279₽</div>
+						</div>
+					</div>
+					<button  data-popup="#delivery" class="market-basket__button">Оформить заказ</button>
+					<div class="market-basket__free-delivery free-delivery-market-basket">
+						<div class="free-delivery-market-basket__icon">
+							<img src="@img/basket/car.png" alt="icon">
+						</div>
+						<div class="free-delivery-market-basket__text">Бесплатная доставка</div>
+					</div>
+				</div>
+			</section>
 			<section class="goods">
 				<div class="goods__content content-goods goods__burger">
 					<h2 class="content-goods__title">Бургеры</h2>
@@ -95,7 +166,7 @@
 								<button class="card-content-goods__button">Добавить</button>
 							</div>
 						</a>
-						<a href="#" data-popup="#delivery" class="content-goods__card card-content-goods">
+						<a href="#" data-popup="#burger-02" class="content-goods__card card-content-goods">
 							<div class="card-content-goods__content">
 								<div class="card-content-goods__image">
 									<img src="@img/goods/burger/02.jpg" alt="image">
@@ -106,7 +177,7 @@
 								<button class="card-content-goods__button">Добавить</button>
 							</div>
 						</a>
-						<a href="#" class="content-goods__card card-content-goods">
+						<a href="#" data-popup="#burger-03" class="content-goods__card card-content-goods">
 							<div class="card-content-goods__content">
 								<div class="card-content-goods__image">
 									<img src="@img/goods/burger/03.jpg" alt="image">
@@ -117,7 +188,7 @@
 								<button class="card-content-goods__button">Добавить</button>
 							</div>
 						</a>
-						<a href="#" class="content-goods__card card-content-goods">
+						<a href="#" data-popup="#burger-04" class="content-goods__card card-content-goods">
 							<div class="card-content-goods__content">
 								<div class="card-content-goods__image">
 									<img src="@img/goods/burger/04.jpg" alt="image">
@@ -128,7 +199,7 @@
 								<button class="card-content-goods__button">Добавить</button>
 							</div>
 						</a>
-						<a href="#" class="content-goods__card card-content-goods">
+						<a href="#" data-popup="#burger-05" class="content-goods__card card-content-goods">
 							<div class="card-content-goods__content">
 								<div class="card-content-goods__image">
 									<img src="@img/goods/burger/05.jpg" alt="image">
@@ -139,7 +210,7 @@
 								<button class="card-content-goods__button">Добавить</button>
 							</div>
 						</a>
-						<a href="#" class="content-goods__card card-content-goods">
+						<a href="#" data-popup="#burger-06" class="content-goods__card card-content-goods">
 							<div class="card-content-goods__content">
 								<div class="card-content-goods__image">
 									<img src="@img/goods/burger/06.jpg" alt="image">
@@ -152,10 +223,10 @@
 						</a>
 					</div>
 				</div>
-				<div class="goods__content content-goods goods__hot-dog">
+				<div class="goods__content content-goods goods__snack">
 					<h2 class="content-goods__title">Закуски</h2>
 					<div class="content-goods__goods">
-						<a href="#" class="content-goods__card card-content-goods">
+						<a href="#" data-popup="#snack-01" class="content-goods__card card-content-goods">
 							<div class="card-content-goods__content">
 								<div class="card-content-goods__image">
 									<img src="@img/goods/snack/01.jpg" alt="image">
@@ -166,7 +237,7 @@
 								<button class="card-content-goods__button">Добавить</button>
 							</div>
 						</a>
-						<a href="#" class="content-goods__card card-content-goods">
+						<a href="#" data-popup="#snack-02" class="content-goods__card card-content-goods">
 							<div class="card-content-goods__content">
 								<div class="card-content-goods__image">
 									<img src="@img/goods/snack/02.jpg" alt="image">
@@ -177,7 +248,7 @@
 								<button class="card-content-goods__button">Добавить</button>
 							</div>
 						</a>
-						<a href="#" class="content-goods__card card-content-goods">
+						<a href="#" data-popup="#snack-03" class="content-goods__card card-content-goods">
 							<div class="card-content-goods__content">
 								<div class="card-content-goods__image">
 									<img src="@img/goods/snack/03.jpg" alt="image">
@@ -190,10 +261,10 @@
 						</a>
 					</div>
 				</div>
-				<div class="goods__content content-goods goods__snack">
+				<div class="goods__content content-goods goods__hot-dog">
 					<h2 class="content-goods__title">Хот-доги</h2>
 					<div class="content-goods__goods">
-						<a href="#" class="content-goods__card card-content-goods">
+						<a href="#" data-popup="#hot-dog-01" class="content-goods__card card-content-goods">
 							<div class="card-content-goods__content">
 								<div class="card-content-goods__image">
 									<img src="@img/goods/hotdog/01.jpg" alt="image">
@@ -204,7 +275,7 @@
 								<button class="card-content-goods__button">Добавить</button>
 							</div>
 						</a>
-						<a href="#" class="content-goods__card card-content-goods">
+						<a href="#" data-popup="#hot-dog-02" class="content-goods__card card-content-goods">
 							<div class="card-content-goods__content">
 								<div class="card-content-goods__image">
 									<img src="@img/goods/hotdog/02.jpg" alt="image">
@@ -215,7 +286,7 @@
 								<button class="card-content-goods__button">Добавить</button>
 							</div>
 						</a>
-						<a href="#" class="content-goods__card card-content-goods">
+						<a href="#" data-popup="#hot-dog-03" class="content-goods__card card-content-goods">
 							<div class="card-content-goods__content">
 								<div class="card-content-goods__image">
 									<img src="@img/goods/hotdog/03.jpg" alt="image">

@@ -1,3 +1,48 @@
+<div id="delivery" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close popup__close_m">
+				<svg width="35" height="35" viewBox="0 0 29 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<rect x="7.07422" y="8.28249" width="1" height="20" transform="rotate(-45 7.07422 8.28249)" fill="#B1B1B1"/>
+					<rect x="7.78125" y="22.4246" width="1" height="20" transform="rotate(-135 7.78125 22.4246)" fill="#B1B1B1"/>
+				</svg>
+			</button>
+				<div class="popup-goods popup-delivery">
+					<div class="popup-delivery__box">
+						<div class="popup-delivery__image">
+							<img src="@img/goods/fritter.png" alt="image">
+						</div>
+						<div class="popup-delivery__body">
+							<div class="popup-goods__title">Доставка</div>
+							<form action="#" class="popup-delivery__form">
+								<input class="popup-delivery__input input__name" placeholder="Ваше имя" type="text" >
+								<input class="popup-delivery__input input__tel" placeholder="Телефон" type="text" >
+								<div class="popup-delivery__input-radio">
+									<label class="radio__carry">
+										<input class="radio-box" type="radio" name="radio">
+										<span class="check-style"></span>
+										Самовывоз
+									</label>
+									<label class="radio__delivery">
+										<input class="radio-box" type="radio" name="radio" >
+										<span class="check-style"></span>
+										Доставка
+									</label>
+								</div>
+								<input class="popup-delivery__input input__adress" placeholder="Улица, дом, квартира" type="text" >
+								<div class="input__house">
+									<input class="popup-delivery__input input__floor" placeholder="Этаж" type="text" >
+									<input class="popup-delivery__input input__door-phone" placeholder="Домофон" type="text" >
+								</div>
+								<button class="popup-delivery__button">Оформить</button>
+							</form>
+						</div>
+					</div>
+				</div>
+		</div>
+	</div>
+</div>
+
 <div id="burger-01" aria-hidden="true" class="popup">
 	<div class="popup__wrapper">
 		<div class="popup__content">
@@ -42,45 +87,484 @@
 	</div>
 </div>
 
-<div id="delivery" aria-hidden="true" class="popup">
+<div id="burger-02" aria-hidden="true" class="popup">
 	<div class="popup__wrapper">
 		<div class="popup__content">
-			<button data-close type="button" class="popup__close popup__close_m">
+			<button data-close type="button" class="popup__close">
 				<svg width="35" height="35" viewBox="0 0 29 30" fill="none" xmlns="http://www.w3.org/2000/svg">
 					<rect x="7.07422" y="8.28249" width="1" height="20" transform="rotate(-45 7.07422 8.28249)" fill="#B1B1B1"/>
 					<rect x="7.78125" y="22.4246" width="1" height="20" transform="rotate(-135 7.78125 22.4246)" fill="#B1B1B1"/>
 				</svg>
 			</button>
-				<div class="popup-goods popup-delivery">
-					<div class="popup-delivery__box">
-						<div class="popup-delivery__image">
-							<img src="@img/goods/fritter.png" alt="image">
+				<div class="popup-goods">
+					<div class="popup-goods__title">Супер сырный</div>
+					<div class="popup-goods__body">
+						<div class="popup-goods__image">
+							<img src="@img/goods/burger/02.jpg" alt="image">
 						</div>
-						<div class="popup-delivery__body">
-							<div class="popup-goods__title">Доставка</div>
-							<form action="#" class="popup-delivery__form">
-								<input class="popup-delivery__input input__name" placeholder="Ваше имя" type="text" >
-								<input class="popup-delivery__input input__tel" placeholder="Телефон" type="text" >
-								<div class="popup-delivery__input-radio">
-									<label class="radio__carry">
-										<input class="radio-box" type="radio" name="radio">
-										<span class="check-style"></span>
-										Самовывоз
-									</label>
-									<label class="radio__delivery">
-										<input class="radio-box" type="radio" name="radio" >
-										<span class="check-style"></span>
-										Доставка
-									</label>
-								</div>
-								<input class="popup-delivery__input input__adress" placeholder="Улица, дом, квартира" type="text" >
-								<div class="input__house">
-									<input class="popup-delivery__input input__floor" placeholder="Этаж" type="text" >
-									<input class="popup-delivery__input input__door-phone" placeholder="Домофон" type="text" >
-								</div>
-								<button class="popup-delivery__button">Оформить</button>
-							</form>
+						<div class="popup-goods__description description-popup-goods">
+							<div class="description-popup-goods__text">Супер мясное наслаждение! Большая рубленая котлета из свежего говяжего мяса покорит вас своей сочностью, а хрустящие листья салата добавят свежести.</div>
+							<div class="description-popup-goods__composition">
+								<p>Состав:</p>
+								<p>Пшеничная булочка</p>
+								<p>Котлета из говядины</p>
+								<p>Красный лук</p>
+								<p>Листья салата</p>
+								<p>Соус горчичный</p>
+							</div>
+							<div class="description-popup-goods__weight">520г, ккал 430</div>
 						</div>
+					</div>
+					<div class="popup-goods__order order-popup-goods">
+						<button class="order-popup-goods__button">Добавить</button>
+						<div class="order-popup-goods__count">
+							<div class="order-popup-goods__count-box">
+								<span>-</span>
+								<span>0</span>
+								<span>+</span>
+							</div>
+						</div>
+						<div class="order-popup-goods__bill">550₽</div>
+					</div>
+				</div>
+		</div>
+	</div>
+</div>
+
+<div id="burger-03" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close">
+				<svg width="35" height="35" viewBox="0 0 29 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<rect x="7.07422" y="8.28249" width="1" height="20" transform="rotate(-45 7.07422 8.28249)" fill="#B1B1B1"/>
+					<rect x="7.78125" y="22.4246" width="1" height="20" transform="rotate(-135 7.78125 22.4246)" fill="#B1B1B1"/>
+				</svg>
+			</button>
+				<div class="popup-goods">
+					<div class="popup-goods__title">Сытный</div>
+					<div class="popup-goods__body">
+						<div class="popup-goods__image">
+							<img src="@img/goods/burger/03.jpg" alt="image">
+						</div>
+						<div class="popup-goods__description description-popup-goods">
+							<div class="description-popup-goods__text">Супер мясное наслаждение! Большая рубленая котлета из свежего говяжего мяса покорит вас своей сочностью, а хрустящие листья салата добавят свежести.</div>
+							<div class="description-popup-goods__composition">
+								<p>Состав:</p>
+								<p>Пшеничная булочка</p>
+								<p>Котлета из говядины</p>
+								<p>Красный лук</p>
+								<p>Листья салата</p>
+								<p>Соус горчичный</p>
+							</div>
+							<div class="description-popup-goods__weight">520г, ккал 430</div>
+						</div>
+					</div>
+					<div class="popup-goods__order order-popup-goods">
+						<button class="order-popup-goods__button">Добавить</button>
+						<div class="order-popup-goods__count">
+							<div class="order-popup-goods__count-box">
+								<span>-</span>
+								<span>0</span>
+								<span>+</span>
+							</div>
+						</div>
+						<div class="order-popup-goods__bill">639₽</div>
+					</div>
+				</div>
+		</div>
+	</div>
+</div>
+
+<div id="burger-04" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close">
+				<svg width="35" height="35" viewBox="0 0 29 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<rect x="7.07422" y="8.28249" width="1" height="20" transform="rotate(-45 7.07422 8.28249)" fill="#B1B1B1"/>
+					<rect x="7.78125" y="22.4246" width="1" height="20" transform="rotate(-135 7.78125 22.4246)" fill="#B1B1B1"/>
+				</svg>
+			</button>
+				<div class="popup-goods">
+					<div class="popup-goods__title">Тяжелый удар</div>
+					<div class="popup-goods__body">
+						<div class="popup-goods__image">
+							<img src="@img/goods/burger/04.jpg" alt="image">
+						</div>
+						<div class="popup-goods__description description-popup-goods">
+							<div class="description-popup-goods__text">Супер мясное наслаждение! Большая рубленая котлета из свежего говяжего мяса покорит вас своей сочностью, а хрустящие листья салата добавят свежести.</div>
+							<div class="description-popup-goods__composition">
+								<p>Состав:</p>
+								<p>Пшеничная булочка</p>
+								<p>Котлета из говядины</p>
+								<p>Красный лук</p>
+								<p>Листья салата</p>
+								<p>Соус горчичный</p>
+							</div>
+							<div class="description-popup-goods__weight">520г, ккал 430</div>
+						</div>
+					</div>
+					<div class="popup-goods__order order-popup-goods">
+						<button class="order-popup-goods__button">Добавить</button>
+						<div class="order-popup-goods__count">
+							<div class="order-popup-goods__count-box">
+								<span>-</span>
+								<span>0</span>
+								<span>+</span>
+							</div>
+						</div>
+						<div class="order-popup-goods__bill">480₽</div>
+					</div>
+				</div>
+		</div>
+	</div>
+</div>
+
+<div id="burger-05" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close">
+				<svg width="35" height="35" viewBox="0 0 29 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<rect x="7.07422" y="8.28249" width="1" height="20" transform="rotate(-45 7.07422 8.28249)" fill="#B1B1B1"/>
+					<rect x="7.78125" y="22.4246" width="1" height="20" transform="rotate(-135 7.78125 22.4246)" fill="#B1B1B1"/>
+				</svg>
+			</button>
+				<div class="popup-goods">
+					<div class="popup-goods__title">Вечная классика</div>
+					<div class="popup-goods__body">
+						<div class="popup-goods__image">
+							<img src="@img/goods/burger/05.jpg" alt="image">
+						</div>
+						<div class="popup-goods__description description-popup-goods">
+							<div class="description-popup-goods__text">Супер мясное наслаждение! Большая рубленая котлета из свежего говяжего мяса покорит вас своей сочностью, а хрустящие листья салата добавят свежести.</div>
+							<div class="description-popup-goods__composition">
+								<p>Состав:</p>
+								<p>Пшеничная булочка</p>
+								<p>Котлета из говядины</p>
+								<p>Красный лук</p>
+								<p>Листья салата</p>
+								<p>Соус горчичный</p>
+							</div>
+							<div class="description-popup-goods__weight">520г, ккал 430</div>
+						</div>
+					</div>
+					<div class="popup-goods__order order-popup-goods">
+						<button class="order-popup-goods__button">Добавить</button>
+						<div class="order-popup-goods__count">
+							<div class="order-popup-goods__count-box">
+								<span>-</span>
+								<span>0</span>
+								<span>+</span>
+							</div>
+						</div>
+						<div class="order-popup-goods__bill">450₽</div>
+					</div>
+				</div>
+		</div>
+	</div>
+</div>
+
+<div id="burger-06" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close">
+				<svg width="35" height="35" viewBox="0 0 29 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<rect x="7.07422" y="8.28249" width="1" height="20" transform="rotate(-45 7.07422 8.28249)" fill="#B1B1B1"/>
+					<rect x="7.78125" y="22.4246" width="1" height="20" transform="rotate(-135 7.78125 22.4246)" fill="#B1B1B1"/>
+				</svg>
+			</button>
+				<div class="popup-goods">
+					<div class="popup-goods__title">Итальянский</div>
+					<div class="popup-goods__body">
+						<div class="popup-goods__image">
+							<img src="@img/goods/burger/06.jpg" alt="image">
+						</div>
+						<div class="popup-goods__description description-popup-goods">
+							<div class="description-popup-goods__text">Супер мясное наслаждение! Большая рубленая котлета из свежего говяжего мяса покорит вас своей сочностью, а хрустящие листья салата добавят свежести.</div>
+							<div class="description-popup-goods__composition">
+								<p>Состав:</p>
+								<p>Пшеничная булочка</p>
+								<p>Котлета из говядины</p>
+								<p>Красный лук</p>
+								<p>Листья салата</p>
+								<p>Соус горчичный</p>
+							</div>
+							<div class="description-popup-goods__weight">520г, ккал 430</div>
+						</div>
+					</div>
+					<div class="popup-goods__order order-popup-goods">
+						<button class="order-popup-goods__button">Добавить</button>
+						<div class="order-popup-goods__count">
+							<div class="order-popup-goods__count-box">
+								<span>-</span>
+								<span>0</span>
+								<span>+</span>
+							</div>
+						</div>
+						<div class="order-popup-goods__bill">560₽</div>
+					</div>
+				</div>
+		</div>
+	</div>
+</div>
+
+<div id="snack-01" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close">
+				<svg width="35" height="35" viewBox="0 0 29 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<rect x="7.07422" y="8.28249" width="1" height="20" transform="rotate(-45 7.07422 8.28249)" fill="#B1B1B1"/>
+					<rect x="7.78125" y="22.4246" width="1" height="20" transform="rotate(-135 7.78125 22.4246)" fill="#B1B1B1"/>
+				</svg>
+			</button>
+				<div class="popup-goods">
+					<div class="popup-goods__title">Начос</div>
+					<div class="popup-goods__body">
+						<div class="popup-goods__image">
+							<img src="@img/goods/snack/01.jpg" alt="image">
+						</div>
+						<div class="popup-goods__description description-popup-goods">
+							<div class="description-popup-goods__text">Супер мясное наслаждение! Большая рубленая котлета из свежего говяжего мяса покорит вас своей сочностью, а хрустящие листья салата добавят свежести.</div>
+							<div class="description-popup-goods__composition">
+								<p>Состав:</p>
+								<p>Пшеничная булочка</p>
+								<p>Котлета из говядины</p>
+								<p>Красный лук</p>
+								<p>Листья салата</p>
+								<p>Соус горчичный</p>
+							</div>
+							<div class="description-popup-goods__weight">520г, ккал 430</div>
+						</div>
+					</div>
+					<div class="popup-goods__order order-popup-goods">
+						<button class="order-popup-goods__button">Добавить</button>
+						<div class="order-popup-goods__count">
+							<div class="order-popup-goods__count-box">
+								<span>-</span>
+								<span>0</span>
+								<span>+</span>
+							</div>
+						</div>
+						<div class="order-popup-goods__bill">250₽</div>
+					</div>
+				</div>
+		</div>
+	</div>
+</div>
+
+<div id="snack-02" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close">
+				<svg width="35" height="35" viewBox="0 0 29 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<rect x="7.07422" y="8.28249" width="1" height="20" transform="rotate(-45 7.07422 8.28249)" fill="#B1B1B1"/>
+					<rect x="7.78125" y="22.4246" width="1" height="20" transform="rotate(-135 7.78125 22.4246)" fill="#B1B1B1"/>
+				</svg>
+			</button>
+				<div class="popup-goods">
+					<div class="popup-goods__title">Картошка фри</div>
+					<div class="popup-goods__body">
+						<div class="popup-goods__image">
+							<img src="@img/goods/snack/02.jpg" alt="image">
+						</div>
+						<div class="popup-goods__description description-popup-goods">
+							<div class="description-popup-goods__text">Супер мясное наслаждение! Большая рубленая котлета из свежего говяжего мяса покорит вас своей сочностью, а хрустящие листья салата добавят свежести.</div>
+							<div class="description-popup-goods__composition">
+								<p>Состав:</p>
+								<p>Пшеничная булочка</p>
+								<p>Котлета из говядины</p>
+								<p>Красный лук</p>
+								<p>Листья салата</p>
+								<p>Соус горчичный</p>
+							</div>
+							<div class="description-popup-goods__weight">520г, ккал 430</div>
+						</div>
+					</div>
+					<div class="popup-goods__order order-popup-goods">
+						<button class="order-popup-goods__button">Добавить</button>
+						<div class="order-popup-goods__count">
+							<div class="order-popup-goods__count-box">
+								<span>-</span>
+								<span>0</span>
+								<span>+</span>
+							</div>
+						</div>
+						<div class="order-popup-goods__bill">245₽</div>
+					</div>
+				</div>
+		</div>
+	</div>
+</div>
+
+<div id="snack-03" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close">
+				<svg width="35" height="35" viewBox="0 0 29 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<rect x="7.07422" y="8.28249" width="1" height="20" transform="rotate(-45 7.07422 8.28249)" fill="#B1B1B1"/>
+					<rect x="7.78125" y="22.4246" width="1" height="20" transform="rotate(-135 7.78125 22.4246)" fill="#B1B1B1"/>
+				</svg>
+			</button>
+				<div class="popup-goods">
+					<div class="popup-goods__title">Луковые кольца</div>
+					<div class="popup-goods__body">
+						<div class="popup-goods__image">
+							<img src="@img/goods/snack/03.jpg" alt="image">
+						</div>
+						<div class="popup-goods__description description-popup-goods">
+							<div class="description-popup-goods__text">Супер мясное наслаждение! Большая рубленая котлета из свежего говяжего мяса покорит вас своей сочностью, а хрустящие листья салата добавят свежести.</div>
+							<div class="description-popup-goods__composition">
+								<p>Состав:</p>
+								<p>Пшеничная булочка</p>
+								<p>Котлета из говядины</p>
+								<p>Красный лук</p>
+								<p>Листья салата</p>
+								<p>Соус горчичный</p>
+							</div>
+							<div class="description-popup-goods__weight">520г, ккал 430</div>
+						</div>
+					</div>
+					<div class="popup-goods__order order-popup-goods">
+						<button class="order-popup-goods__button">Добавить</button>
+						<div class="order-popup-goods__count">
+							<div class="order-popup-goods__count-box">
+								<span>-</span>
+								<span>0</span>
+								<span>+</span>
+							</div>
+						</div>
+						<div class="order-popup-goods__bill">230₽</div>
+					</div>
+				</div>
+		</div>
+	</div>
+</div>
+
+<div id="hot-dog-01" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close">
+				<svg width="35" height="35" viewBox="0 0 29 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<rect x="7.07422" y="8.28249" width="1" height="20" transform="rotate(-45 7.07422 8.28249)" fill="#B1B1B1"/>
+					<rect x="7.78125" y="22.4246" width="1" height="20" transform="rotate(-135 7.78125 22.4246)" fill="#B1B1B1"/>
+				</svg>
+			</button>
+				<div class="popup-goods">
+					<div class="popup-goods__title">Домашний хот-дог</div>
+					<div class="popup-goods__body">
+						<div class="popup-goods__image">
+							<img src="@img/goods/hotdog/01.jpg" alt="image">
+						</div>
+						<div class="popup-goods__description description-popup-goods">
+							<div class="description-popup-goods__text">Супер мясное наслаждение! Большая рубленая котлета из свежего говяжего мяса покорит вас своей сочностью, а хрустящие листья салата добавят свежести.</div>
+							<div class="description-popup-goods__composition">
+								<p>Состав:</p>
+								<p>Пшеничная булочка</p>
+								<p>Котлета из говядины</p>
+								<p>Красный лук</p>
+								<p>Листья салата</p>
+								<p>Соус горчичный</p>
+							</div>
+							<div class="description-popup-goods__weight">520г, ккал 430</div>
+						</div>
+					</div>
+					<div class="popup-goods__order order-popup-goods">
+						<button class="order-popup-goods__button">Добавить</button>
+						<div class="order-popup-goods__count">
+							<div class="order-popup-goods__count-box">
+								<span>-</span>
+								<span>0</span>
+								<span>+</span>
+							</div>
+						</div>
+						<div class="order-popup-goods__bill">290₽</div>
+					</div>
+				</div>
+		</div>
+	</div>
+</div>
+
+<div id="hot-dog-02" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close">
+				<svg width="35" height="35" viewBox="0 0 29 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<rect x="7.07422" y="8.28249" width="1" height="20" transform="rotate(-45 7.07422 8.28249)" fill="#B1B1B1"/>
+					<rect x="7.78125" y="22.4246" width="1" height="20" transform="rotate(-135 7.78125 22.4246)" fill="#B1B1B1"/>
+				</svg>
+			</button>
+				<div class="popup-goods">
+					<div class="popup-goods__title">Жгучий хот-дог</div>
+					<div class="popup-goods__body">
+						<div class="popup-goods__image">
+							<img src="@img/goods/hotdog/02.jpg" alt="image">
+						</div>
+						<div class="popup-goods__description description-popup-goods">
+							<div class="description-popup-goods__text">Супер мясное наслаждение! Большая рубленая котлета из свежего говяжего мяса покорит вас своей сочностью, а хрустящие листья салата добавят свежести.</div>
+							<div class="description-popup-goods__composition">
+								<p>Состав:</p>
+								<p>Пшеничная булочка</p>
+								<p>Котлета из говядины</p>
+								<p>Красный лук</p>
+								<p>Листья салата</p>
+								<p>Соус горчичный</p>
+							</div>
+							<div class="description-popup-goods__weight">520г, ккал 430</div>
+						</div>
+					</div>
+					<div class="popup-goods__order order-popup-goods">
+						<button class="order-popup-goods__button">Добавить</button>
+						<div class="order-popup-goods__count">
+							<div class="order-popup-goods__count-box">
+								<span>-</span>
+								<span>0</span>
+								<span>+</span>
+							</div>
+						</div>
+						<div class="order-popup-goods__bill">239₽</div>
+					</div>
+				</div>
+		</div>
+	</div>
+</div>
+
+<div id="hot-dog-03" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close">
+				<svg width="35" height="35" viewBox="0 0 29 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<rect x="7.07422" y="8.28249" width="1" height="20" transform="rotate(-45 7.07422 8.28249)" fill="#B1B1B1"/>
+					<rect x="7.78125" y="22.4246" width="1" height="20" transform="rotate(-135 7.78125 22.4246)" fill="#B1B1B1"/>
+				</svg>
+			</button>
+				<div class="popup-goods">
+					<div class="popup-goods__title">Классический хот-дог</div>
+					<div class="popup-goods__body">
+						<div class="popup-goods__image">
+							<img src="@img/goods/hotdog/03.jpg" alt="image">
+						</div>
+						<div class="popup-goods__description description-popup-goods">
+							<div class="description-popup-goods__text">Супер мясное наслаждение! Большая рубленая котлета из свежего говяжего мяса покорит вас своей сочностью, а хрустящие листья салата добавят свежести.</div>
+							<div class="description-popup-goods__composition">
+								<p>Состав:</p>
+								<p>Пшеничная булочка</p>
+								<p>Котлета из говядины</p>
+								<p>Красный лук</p>
+								<p>Листья салата</p>
+								<p>Соус горчичный</p>
+							</div>
+							<div class="description-popup-goods__weight">520г, ккал 430</div>
+						</div>
+					</div>
+					<div class="popup-goods__order order-popup-goods">
+						<button class="order-popup-goods__button">Добавить</button>
+						<div class="order-popup-goods__count">
+							<div class="order-popup-goods__count-box">
+								<span>-</span>
+								<span>0</span>
+								<span>+</span>
+							</div>
+						</div>
+						<div class="order-popup-goods__bill">220₽</div>
 					</div>
 				</div>
 		</div>
