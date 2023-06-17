@@ -21,7 +21,7 @@ body::after {
 	bottom: 0;
 	right: 0;
 	padding: 30px 10px;
-	//transition: visibility 0.8s ease 0s;
+	transition: visibility 0.8s ease 0s;
 	visibility: hidden;
 	pointer-events: none;
 }
@@ -51,9 +51,9 @@ body::after {
 	transform: scale(0);
 	transition: transform 0.3s ease 0s;
 	background-color: #eee;
-	padding: 20px;
+	//padding: 20px;
 	width: 100%;
-	max-width: 900px;
+	max-width: 684px;
 	border-radius: 20px;
 	.lock & {
 		visibility: visible;

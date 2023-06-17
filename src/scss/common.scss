@@ -85,6 +85,7 @@
 		align-items: center;
 		border-radius: 12px;
 		transition: background-color 0.3s ease 0s;
+		background-color: #FFAB08;
 		&:hover{
 			background-color: #ff7020;
 		}
@@ -138,5 +139,27 @@
 		font-weight: 600;
 		line-height: 130%;
 		padding-left: 15px;
+	}
+}
+
+.popup__content {
+	position: relative;
+}
+
+.popup__close{
+	position: absolute;
+	top: 16px;
+	right: 16px;
+	//height: 40px;
+	//width: 40px;
+	background-color: #fff;
+	rect {
+		fill: #FFAB08;
+		transition: all 0.3s ease 0s;
+	}
+	&:hover {
+		rect {
+			fill: #ff7020;
+		}
 	}
 }
