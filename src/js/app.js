@@ -41,7 +41,7 @@ import * as flsFunctions from "./files/functions.js";
 //===================//
 
 /* Работа с полями формы */
-// flsForms.formFieldsInit({ viewPass: false });
+flsForms.formFieldsInit({ viewPass: false });
 /* Oтправка формы */
 // flsForms.formSubmit();
 //===================//
