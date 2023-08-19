@@ -1,5 +1,4 @@
 .page {
-	padding-bottom: 150px;
 }
 .category {
 	padding-top: 40px;
@@ -29,7 +28,19 @@
 			justify-content: space-between;
 		}
 }
+
+._unavailable {
+	opacity: .5;
+	user-select: none;
+	&.button-category:hover{
+		outline: none;
+		cursor: auto;
+	}
+}
+
 .button-category {
+	cursor: pointer;
+	user-select: none;
 	margin-bottom: 20px;
 	display: flex;
 	align-items: center;
@@ -54,7 +65,7 @@
 // main-content ====================================================================================================//
 
 .main-content {
-	margin-bottom: 100px;	//!!!
+	//margin-bottom: 100px;	//!!!
 
 	@include adaptiveValue("padding-top", 50, 40);
 
@@ -164,6 +175,10 @@
 			background-color: #F86310 !important;
 		}
 	}
+}
+
+._hidden {
+	display: none;
 }
 
 // market-basket ====================================================================================================//

@@ -52,11 +52,11 @@
 					<rect x="7.78125" y="22.4246" width="1" height="20" transform="rotate(-135 7.78125 22.4246)" fill="#B1B1B1"/>
 				</svg>
 			</button>
-				<div class="popup-goods">
+				<div data-id='01' class="popup-goods">
 					<div class="popup-goods__title">Мясная бомба</div>
 					<div class="popup-goods__body">
 						<div class="popup-goods__image">
-							<img src="@img/goods/burger/01.jpg" alt="image">
+							<img class="product-image" src="@img/goods/burger/01.jpg" alt="image">
 						</div>
 						<div class="popup-goods__description description-popup-goods">
 							<div class="description-popup-goods__text">Супер мясное наслаждение! Большая рубленая котлета из свежего говяжего мяса покорит вас своей сочностью, а хрустящие листья салата добавят свежести.</div>
@@ -72,13 +72,13 @@
 						</div>
 					</div>
 					<div class="popup-goods__order order-popup-goods">
-						<button class="order-popup-goods__button">Добавить</button>
+						<button data-cart class="order-popup-goods__button">Добавить</button>
 						<div class="order-popup-goods__count">
-							<div class="order-popup-goods__count-box">
-								<span>-</span>
-								<span>0</span>
-								<span>+</span>
-							</div>
+								<div class="order-popup-goods__count-box" data-counter-wrapper>
+									<span data-action="minus">-</span>
+									<span data-current="counter">1</span>
+									<span data-action="plus">+</span>
+								</div>
 						</div>
 						<div class="order-popup-goods__bill">689₽</div>
 					</div>
@@ -96,11 +96,11 @@
 					<rect x="7.78125" y="22.4246" width="1" height="20" transform="rotate(-135 7.78125 22.4246)" fill="#B1B1B1"/>
 				</svg>
 			</button>
-				<div class="popup-goods">
+				<div data-id='02' class="popup-goods">
 					<div class="popup-goods__title">Супер сырный</div>
 					<div class="popup-goods__body">
 						<div class="popup-goods__image">
-							<img src="@img/goods/burger/02.jpg" alt="image">
+							<img class="product-image" src="@img/goods/burger/02.jpg" alt="image">
 						</div>
 						<div class="popup-goods__description description-popup-goods">
 							<div class="description-popup-goods__text">Супер мясное наслаждение! Большая рубленая котлета из свежего говяжего мяса покорит вас своей сочностью, а хрустящие листья салата добавят свежести.</div>
@@ -116,13 +116,13 @@
 						</div>
 					</div>
 					<div class="popup-goods__order order-popup-goods">
-						<button class="order-popup-goods__button">Добавить</button>
+						<button data-cart class="order-popup-goods__button">Добавить</button>
 						<div class="order-popup-goods__count">
-							<div class="order-popup-goods__count-box">
-								<span>-</span>
-								<span>0</span>
-								<span>+</span>
-							</div>
+								<div class="order-popup-goods__count-box" data-counter-wrapper>
+									<span data-action="minus">-</span>
+									<span data-current="counter">1</span>
+									<span data-action="plus">+</span>
+								</div>
 						</div>
 						<div class="order-popup-goods__bill">550₽</div>
 					</div>
@@ -140,11 +140,11 @@
 					<rect x="7.78125" y="22.4246" width="1" height="20" transform="rotate(-135 7.78125 22.4246)" fill="#B1B1B1"/>
 				</svg>
 			</button>
-				<div class="popup-goods">
+				<div data-id='03' class="popup-goods">
 					<div class="popup-goods__title">Сытный</div>
 					<div class="popup-goods__body">
 						<div class="popup-goods__image">
-							<img src="@img/goods/burger/03.jpg" alt="image">
+							<img class="product-image" src="@img/goods/burger/03.jpg" alt="image">
 						</div>
 						<div class="popup-goods__description description-popup-goods">
 							<div class="description-popup-goods__text">Супер мясное наслаждение! Большая рубленая котлета из свежего говяжего мяса покорит вас своей сочностью, а хрустящие листья салата добавят свежести.</div>
@@ -160,13 +160,13 @@
 						</div>
 					</div>
 					<div class="popup-goods__order order-popup-goods">
-						<button class="order-popup-goods__button">Добавить</button>
+						<button data-cart class="order-popup-goods__button">Добавить</button>
 						<div class="order-popup-goods__count">
-							<div class="order-popup-goods__count-box">
-								<span>-</span>
-								<span>0</span>
-								<span>+</span>
-							</div>
+								<div class="order-popup-goods__count-box" data-counter-wrapper>
+									<span data-action="minus">-</span>
+									<span data-current="counter">1</span>
+									<span data-action="plus">+</span>
+								</div>
 						</div>
 						<div class="order-popup-goods__bill">639₽</div>
 					</div>
@@ -184,11 +184,11 @@
 					<rect x="7.78125" y="22.4246" width="1" height="20" transform="rotate(-135 7.78125 22.4246)" fill="#B1B1B1"/>
 				</svg>
 			</button>
-				<div class="popup-goods">
+				<div data-id='04' class="popup-goods">
 					<div class="popup-goods__title">Тяжелый удар</div>
 					<div class="popup-goods__body">
 						<div class="popup-goods__image">
-							<img src="@img/goods/burger/04.jpg" alt="image">
+							<img class="product-image" src="@img/goods/burger/04.jpg" alt="image">
 						</div>
 						<div class="popup-goods__description description-popup-goods">
 							<div class="description-popup-goods__text">Супер мясное наслаждение! Большая рубленая котлета из свежего говяжего мяса покорит вас своей сочностью, а хрустящие листья салата добавят свежести.</div>
@@ -204,13 +204,13 @@
 						</div>
 					</div>
 					<div class="popup-goods__order order-popup-goods">
-						<button class="order-popup-goods__button">Добавить</button>
+						<button data-cart class="order-popup-goods__button">Добавить</button>
 						<div class="order-popup-goods__count">
-							<div class="order-popup-goods__count-box">
-								<span>-</span>
-								<span>0</span>
-								<span>+</span>
-							</div>
+								<div class="order-popup-goods__count-box" data-counter-wrapper>
+									<span data-action="minus">-</span>
+									<span data-current="counter">1</span>
+									<span data-action="plus">+</span>
+								</div>
 						</div>
 						<div class="order-popup-goods__bill">480₽</div>
 					</div>
@@ -228,11 +228,11 @@
 					<rect x="7.78125" y="22.4246" width="1" height="20" transform="rotate(-135 7.78125 22.4246)" fill="#B1B1B1"/>
 				</svg>
 			</button>
-				<div class="popup-goods">
+				<div data-id='05' class="popup-goods">
 					<div class="popup-goods__title">Вечная классика</div>
 					<div class="popup-goods__body">
 						<div class="popup-goods__image">
-							<img src="@img/goods/burger/05.jpg" alt="image">
+							<img class="product-image" src="@img/goods/burger/05.jpg" alt="image">
 						</div>
 						<div class="popup-goods__description description-popup-goods">
 							<div class="description-popup-goods__text">Супер мясное наслаждение! Большая рубленая котлета из свежего говяжего мяса покорит вас своей сочностью, а хрустящие листья салата добавят свежести.</div>
@@ -248,13 +248,13 @@
 						</div>
 					</div>
 					<div class="popup-goods__order order-popup-goods">
-						<button class="order-popup-goods__button">Добавить</button>
+						<button data-cart class="order-popup-goods__button">Добавить</button>
 						<div class="order-popup-goods__count">
-							<div class="order-popup-goods__count-box">
-								<span>-</span>
-								<span>0</span>
-								<span>+</span>
-							</div>
+								<div class="order-popup-goods__count-box" data-counter-wrapper>
+									<span data-action="minus">-</span>
+									<span data-current="counter">1</span>
+									<span data-action="plus">+</span>
+								</div>
 						</div>
 						<div class="order-popup-goods__bill">450₽</div>
 					</div>
@@ -272,11 +272,11 @@
 					<rect x="7.78125" y="22.4246" width="1" height="20" transform="rotate(-135 7.78125 22.4246)" fill="#B1B1B1"/>
 				</svg>
 			</button>
-				<div class="popup-goods">
+				<div data-id='06' class="popup-goods">
 					<div class="popup-goods__title">Итальянский</div>
 					<div class="popup-goods__body">
 						<div class="popup-goods__image">
-							<img src="@img/goods/burger/06.jpg" alt="image">
+							<img class="product-image" src="@img/goods/burger/06.jpg" alt="image">
 						</div>
 						<div class="popup-goods__description description-popup-goods">
 							<div class="description-popup-goods__text">Супер мясное наслаждение! Большая рубленая котлета из свежего говяжего мяса покорит вас своей сочностью, а хрустящие листья салата добавят свежести.</div>
@@ -292,13 +292,13 @@
 						</div>
 					</div>
 					<div class="popup-goods__order order-popup-goods">
-						<button class="order-popup-goods__button">Добавить</button>
+						<button data-cart class="order-popup-goods__button">Добавить</button>
 						<div class="order-popup-goods__count">
-							<div class="order-popup-goods__count-box">
-								<span>-</span>
-								<span>0</span>
-								<span>+</span>
-							</div>
+								<div class="order-popup-goods__count-box" data-counter-wrapper>
+									<span data-action="minus">-</span>
+									<span data-current="counter">1</span>
+									<span data-action="plus">+</span>
+								</div>
 						</div>
 						<div class="order-popup-goods__bill">560₽</div>
 					</div>
@@ -316,11 +316,11 @@
 					<rect x="7.78125" y="22.4246" width="1" height="20" transform="rotate(-135 7.78125 22.4246)" fill="#B1B1B1"/>
 				</svg>
 			</button>
-				<div class="popup-goods">
+				<div data-id='07' class="popup-goods">
 					<div class="popup-goods__title">Начос</div>
 					<div class="popup-goods__body">
 						<div class="popup-goods__image">
-							<img src="@img/goods/snack/01.jpg" alt="image">
+							<img class="product-image" src="@img/goods/snack/01.jpg" alt="image">
 						</div>
 						<div class="popup-goods__description description-popup-goods">
 							<div class="description-popup-goods__text">Супер мясное наслаждение! Большая рубленая котлета из свежего говяжего мяса покорит вас своей сочностью, а хрустящие листья салата добавят свежести.</div>
@@ -336,13 +336,13 @@
 						</div>
 					</div>
 					<div class="popup-goods__order order-popup-goods">
-						<button class="order-popup-goods__button">Добавить</button>
+						<button data-cart class="order-popup-goods__button">Добавить</button>
 						<div class="order-popup-goods__count">
-							<div class="order-popup-goods__count-box">
-								<span>-</span>
-								<span>0</span>
-								<span>+</span>
-							</div>
+								<div class="order-popup-goods__count-box" data-counter-wrapper>
+									<span data-action="minus">-</span>
+									<span data-current="counter">1</span>
+									<span data-action="plus">+</span>
+								</div>
 						</div>
 						<div class="order-popup-goods__bill">250₽</div>
 					</div>
@@ -360,11 +360,11 @@
 					<rect x="7.78125" y="22.4246" width="1" height="20" transform="rotate(-135 7.78125 22.4246)" fill="#B1B1B1"/>
 				</svg>
 			</button>
-				<div class="popup-goods">
+				<div data-id='08' class="popup-goods">
 					<div class="popup-goods__title">Картошка фри</div>
 					<div class="popup-goods__body">
 						<div class="popup-goods__image">
-							<img src="@img/goods/snack/02.jpg" alt="image">
+							<img class="product-image" src="@img/goods/snack/02.jpg" alt="image">
 						</div>
 						<div class="popup-goods__description description-popup-goods">
 							<div class="description-popup-goods__text">Супер мясное наслаждение! Большая рубленая котлета из свежего говяжего мяса покорит вас своей сочностью, а хрустящие листья салата добавят свежести.</div>
@@ -380,13 +380,13 @@
 						</div>
 					</div>
 					<div class="popup-goods__order order-popup-goods">
-						<button class="order-popup-goods__button">Добавить</button>
+						<button data-cart class="order-popup-goods__button">Добавить</button>
 						<div class="order-popup-goods__count">
-							<div class="order-popup-goods__count-box">
-								<span>-</span>
-								<span>0</span>
-								<span>+</span>
-							</div>
+								<div class="order-popup-goods__count-box" data-counter-wrapper>
+									<span data-action="minus">-</span>
+									<span data-current="counter">1</span>
+									<span data-action="plus">+</span>
+								</div>
 						</div>
 						<div class="order-popup-goods__bill">245₽</div>
 					</div>
@@ -404,11 +404,11 @@
 					<rect x="7.78125" y="22.4246" width="1" height="20" transform="rotate(-135 7.78125 22.4246)" fill="#B1B1B1"/>
 				</svg>
 			</button>
-				<div class="popup-goods">
+				<div data-id='09' class="popup-goods">
 					<div class="popup-goods__title">Луковые кольца</div>
 					<div class="popup-goods__body">
 						<div class="popup-goods__image">
-							<img src="@img/goods/snack/03.jpg" alt="image">
+							<img class="product-image" src="@img/goods/snack/03.jpg" alt="image">
 						</div>
 						<div class="popup-goods__description description-popup-goods">
 							<div class="description-popup-goods__text">Супер мясное наслаждение! Большая рубленая котлета из свежего говяжего мяса покорит вас своей сочностью, а хрустящие листья салата добавят свежести.</div>
@@ -424,13 +424,13 @@
 						</div>
 					</div>
 					<div class="popup-goods__order order-popup-goods">
-						<button class="order-popup-goods__button">Добавить</button>
+						<button data-cart class="order-popup-goods__button">Добавить</button>
 						<div class="order-popup-goods__count">
-							<div class="order-popup-goods__count-box">
-								<span>-</span>
-								<span>0</span>
-								<span>+</span>
-							</div>
+								<div class="order-popup-goods__count-box" data-counter-wrapper>
+									<span data-action="minus">-</span>
+									<span data-current="counter">1</span>
+									<span data-action="plus">+</span>
+								</div>
 						</div>
 						<div class="order-popup-goods__bill">230₽</div>
 					</div>
@@ -448,11 +448,11 @@
 					<rect x="7.78125" y="22.4246" width="1" height="20" transform="rotate(-135 7.78125 22.4246)" fill="#B1B1B1"/>
 				</svg>
 			</button>
-				<div class="popup-goods">
+				<div data-id='10' class="popup-goods">
 					<div class="popup-goods__title">Домашний хот-дог</div>
 					<div class="popup-goods__body">
 						<div class="popup-goods__image">
-							<img src="@img/goods/hotdog/01.jpg" alt="image">
+							<img class="product-image" src="@img/goods/hotdog/01.jpg" alt="image">
 						</div>
 						<div class="popup-goods__description description-popup-goods">
 							<div class="description-popup-goods__text">Супер мясное наслаждение! Большая рубленая котлета из свежего говяжего мяса покорит вас своей сочностью, а хрустящие листья салата добавят свежести.</div>
@@ -468,13 +468,13 @@
 						</div>
 					</div>
 					<div class="popup-goods__order order-popup-goods">
-						<button class="order-popup-goods__button">Добавить</button>
+						<button data-cart class="order-popup-goods__button">Добавить</button>
 						<div class="order-popup-goods__count">
-							<div class="order-popup-goods__count-box">
-								<span>-</span>
-								<span>0</span>
-								<span>+</span>
-							</div>
+								<div class="order-popup-goods__count-box" data-counter-wrapper>
+									<span data-action="minus">-</span>
+									<span data-current="counter">1</span>
+									<span data-action="plus">+</span>
+								</div>
 						</div>
 						<div class="order-popup-goods__bill">290₽</div>
 					</div>
@@ -492,11 +492,11 @@
 					<rect x="7.78125" y="22.4246" width="1" height="20" transform="rotate(-135 7.78125 22.4246)" fill="#B1B1B1"/>
 				</svg>
 			</button>
-				<div class="popup-goods">
+				<div data-id='11' class="popup-goods">
 					<div class="popup-goods__title">Жгучий хот-дог</div>
 					<div class="popup-goods__body">
 						<div class="popup-goods__image">
-							<img src="@img/goods/hotdog/02.jpg" alt="image">
+							<img class="product-image" src="@img/goods/hotdog/02.jpg" alt="image">
 						</div>
 						<div class="popup-goods__description description-popup-goods">
 							<div class="description-popup-goods__text">Супер мясное наслаждение! Большая рубленая котлета из свежего говяжего мяса покорит вас своей сочностью, а хрустящие листья салата добавят свежести.</div>
@@ -512,13 +512,13 @@
 						</div>
 					</div>
 					<div class="popup-goods__order order-popup-goods">
-						<button class="order-popup-goods__button">Добавить</button>
+						<button data-cart class="order-popup-goods__button">Добавить</button>
 						<div class="order-popup-goods__count">
-							<div class="order-popup-goods__count-box">
-								<span>-</span>
-								<span>0</span>
-								<span>+</span>
-							</div>
+								<div class="order-popup-goods__count-box" data-counter-wrapper>
+									<span data-action="minus">-</span>
+									<span data-current="counter">1</span>
+									<span data-action="plus">+</span>
+								</div>
 						</div>
 						<div class="order-popup-goods__bill">239₽</div>
 					</div>
@@ -536,11 +536,11 @@
 					<rect x="7.78125" y="22.4246" width="1" height="20" transform="rotate(-135 7.78125 22.4246)" fill="#B1B1B1"/>
 				</svg>
 			</button>
-				<div class="popup-goods">
+				<div data-id='12' class="popup-goods">
 					<div class="popup-goods__title">Классический хот-дог</div>
 					<div class="popup-goods__body">
 						<div class="popup-goods__image">
-							<img src="@img/goods/hotdog/03.jpg" alt="image">
+							<img class="product-image" src="@img/goods/hotdog/03.jpg" alt="image">
 						</div>
 						<div class="popup-goods__description description-popup-goods">
 							<div class="description-popup-goods__text">Супер мясное наслаждение! Большая рубленая котлета из свежего говяжего мяса покорит вас своей сочностью, а хрустящие листья салата добавят свежести.</div>
@@ -556,13 +556,13 @@
 						</div>
 					</div>
 					<div class="popup-goods__order order-popup-goods">
-						<button class="order-popup-goods__button">Добавить</button>
+						<button data-cart class="order-popup-goods__button">Добавить</button>
 						<div class="order-popup-goods__count">
-							<div class="order-popup-goods__count-box">
-								<span>-</span>
-								<span>0</span>
-								<span>+</span>
-							</div>
+								<div class="order-popup-goods__count-box" data-counter-wrapper>
+									<span data-action="minus">-</span>
+									<span data-current="counter">1</span>
+									<span data-action="plus">+</span>
+								</div>
 						</div>
 						<div class="order-popup-goods__bill">220₽</div>
 					</div>
