@@ -9,6 +9,30 @@ import { flsModules } from "./modules.js";
 //	$('.comment__body').slick();
 //})
 
+// button open cart ====================================================================================================//
+
+const btnCart = document.querySelector('.icon-bascket')
+const bascketMenu = document.querySelector('.market-basket')
+
+btnCart.addEventListener('click', function () {
+	bascketMenu.classList.toggle('_active')
+})
+
+
+// block Delivery ====================================================================================================//
+
+const radioCarry = document.querySelector('.radio__carry')
+const radioDelivery = document.querySelector('.radio__delivery')
+const boxDelivery = document.querySelector('.delivery-box')
+
+radioCarry.addEventListener('click', function () {
+	boxDelivery.style.display = 'none'
+})
+radioDelivery.addEventListener('click', function () {
+	boxDelivery.style.display = 'block'
+})
+
+
 // tabs ====================================================================================================//
 
 const tabHeaders = document.querySelectorAll('[data-category]')
