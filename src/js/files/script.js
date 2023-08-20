@@ -9,7 +9,6 @@ import { flsModules } from "./modules.js";
 //	$('.comment__body').slick();
 //})
 
-
 // tabs ====================================================================================================//
 
 const tabHeaders = document.querySelectorAll('[data-category]')
@@ -28,6 +27,68 @@ tabHeaders.forEach(function (i) {
 })
 
 
+// SUM PRICE ====================================================================================================//
+
+function calcCartPrice() {
+
+	const cartItems = document.querySelectorAll('.card-market-basket')
+
+	const sumPrice = document.querySelector('.total-market-basket__value')
+	const sumOfGoods = document.querySelector('.head-market-basket__count-goods')
+
+	const deliveryCost = document.querySelector('.free-delivery-market-basket__text')
+	const deliveryBlock = document.querySelector('.free-delivery-market-basket')
+
+	let totalPrice = 0;
+	let sumGoods = 0;
+
+	cartItems.forEach(i => {
+		const amountEl = i.querySelector('[data-current="counter"]')
+		const priceEl = i.querySelector('.definition-card__price')
+
+		const currentPrice = parseInt(amountEl.innerText) * parseInt(priceEl.innerText)
+		totalPrice += currentPrice
+
+		const currentSum = parseInt(amountEl.innerText)
+		sumGoods += currentSum
+
+	});
+
+	sumPrice.innerText = totalPrice + ' ₽'
+	sumOfGoods.innerText = sumGoods
+
+	if (totalPrice > 0) {
+		deliveryBlock.classList.remove('_none')
+	} else {
+		deliveryBlock.classList.add('_none')
+	}
+
+	if (totalPrice >= 1000) {
+		deliveryCost.innerText = 'Бесплатная доставка'
+		deliveryCost.classList.add('_green')
+
+	} else {
+		deliveryCost.innerText = 'Доставка 350 ₽'
+		deliveryCost.classList.remove('_green')
+	}
+}
+
+
+// Hide / show form order ====================================================================================================//
+
+function toggleCartCtatus() {
+
+	const cartWrapper = document.querySelector('.market-basket__order')
+	const orderForm = document.querySelector('.market-basket__button')
+
+	if (cartWrapper.children.length > 0) {
+		orderForm.classList.remove('_none')
+	} else {
+		orderForm.classList.add('_none')
+	}
+}
+
+
 // counter ====================================================================================================//
 
 document.body.addEventListener('click', function (event) {
@@ -37,6 +98,9 @@ document.body.addEventListener('click', function (event) {
 		const counterWrapper = event.target.closest('[data-counter-wrapper]')
 		const counter = counterWrapper.querySelector('[data-current="counter"]')
 		counter.innerText = ++counter.innerText
+
+		calcCartPrice()
+
 	}
 
 	if (event.target.dataset.action === 'minus') {
@@ -49,9 +113,15 @@ document.body.addEventListener('click', function (event) {
 
 		} else if (event.target.closest('.market-basket') && parseInt(counter.innerText) === 1) {
 			event.target.closest('.card-market-basket').remove()
-		}
-	}
+			calcCartPrice()
 
+		}
+		toggleCartCtatus()
+
+		calcCartPrice()
+
+	}
+	//calcCartPrice()
 })
 
 // Add goods in bascket ====================================================================================================//
@@ -83,25 +153,27 @@ window.addEventListener('click', function (event) {
 		} else {
 
 			const cartItemHTML = `
-			<div class="market-basket__card card-market-basket" data-id=${productInfo.id}>
-			<div class="card-market-basket__image">
-				<img src="${productInfo.imgSrc}" alt="${productInfo.title}">
-			</div>
-			<div class="card-market-basket__definition definition-card">
-				<div class="definition-card__name">${productInfo.title}</div>
-				<div class="definition-card__weight">${productInfo.weight}</div>
-				<div class="definition-card__price">${productInfo.price}</div>
-			</div>
-			<div class="card-market-basket__count order-popup-goods__count">
-				<div class="order-popup-goods__count-box" data-counter-wrapper>
-					<span data-action="minus">-</span>
-					<span data-current="counter">${productInfo.counter}</span>
-					<span data-action="plus">+</span>
-				</div>
-			</div>
-		</div>`;
+				<div class="market-basket__card card-market-basket" data-id=${productInfo.id}>
+					<div class="card-market-basket__image">
+						<img src="${productInfo.imgSrc}" alt="${productInfo.title}">
+					</div>
+					<div class="card-market-basket__definition definition-card">
+						<div class="definition-card__name">${productInfo.title}</div>
+						<div class="definition-card__weight">${productInfo.weight}</div>
+						<div class="definition-card__price">${productInfo.price}</div>
+					</div>
+					<div class="card-market-basket__count order-popup-goods__count">
+						<div class="order-popup-goods__count-box" data-counter-wrapper>
+							<span data-action="minus">-</span>
+							<span data-current="counter">${productInfo.counter}</span>
+							<span data-action="plus">+</span>
+						</div>
+					</div>
+				</div>`;
 
 			cartWrapper.insertAdjacentHTML('beforeend', cartItemHTML)
+
+			toggleCartCtatus()
 		}
 
 		card.querySelector('[data-current="counter"]').innerText = '1'
@@ -112,7 +184,8 @@ window.addEventListener('click', function (event) {
 		const doc = document.documentElement
 		doc.classList.remove('popup-show')
 		doc.classList.remove('lock')
+
+		calcCartPrice()
 	}
 })
 
-//  ====================================================================================================//

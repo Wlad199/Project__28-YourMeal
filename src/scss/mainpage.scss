@@ -1,5 +1,7 @@
 .page {
+	//position: relative;
 }
+
 .category {
 	padding-top: 40px;
 	//overflow: auto;
@@ -218,6 +220,16 @@
 	&__free-delivery {
 	}
 }
+
+.free-delivery-market-basket__free{
+	padding-top: 15px;
+	font-size: 14px;
+	color: #3b3b3b;
+}
+
+._none{
+	display: none;
+}
 /////////////////////////
 
 .head-market-basket {
@@ -242,6 +254,7 @@
 .card-market-basket {
 	display: flex;
 	align-items: center;
+	justify-content: space-between;
 	padding: 14px 0px;
 	border-bottom: 1px solid #F2F2F3;
 	transition: all 0.3s ease 0s;
@@ -261,6 +274,7 @@
 		padding-left: 6px;
 		font-size: 12px;
 		line-height: 133.333333%; /* 16/12 */
+		flex: 1 1 100%;
 	}
 
 	&__count {
@@ -309,6 +323,45 @@
 	}
 
 	&__text {
-		font-size: 14px;
+		font-size: 16px;
+		padding-top: 5px;
+		color: red;
+	}
+}
+
+.free-delivery-market-basket__text._green{
+	color: green;
+}
+.free-delivery-market-basket._none{
+	display: none;
+}
+
+.icon-bascket{
+	cursor: pointer;
+	max-width: 60px;
+	position: fixed;
+	top: 90%;
+	right: 35px;
+	width: 100%;
+	height: 100%;
+	svg{
+		position: relative;
+		z-index: 1;
+	}
+	path{
+		fill: #F86310;
+	}
+	span{
+		position: relative;
+		&::before{
+			content: '';
+			border-radius: 50%;
+			position: absolute;
+			width: 80px;
+			height: 80px;
+			top: -54px;
+			left: -69px;
+			backdrop-filter: blur(5px);
+		}
 	}
 }
