@@ -27,9 +27,13 @@ const boxDelivery = document.querySelector('.delivery-box')
 
 radioCarry.addEventListener('click', function () {
 	boxDelivery.style.display = 'none'
+	radioDelivery.classList.remove('_active')
+	radioCarry.classList.add('_active')
 })
 radioDelivery.addEventListener('click', function () {
 	boxDelivery.style.display = 'block'
+	radioCarry.classList.remove('_active')
+	radioDelivery.classList.add('_active')
 })
 
 

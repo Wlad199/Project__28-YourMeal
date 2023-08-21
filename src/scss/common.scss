@@ -302,10 +302,17 @@ label {
 	}
 }
 
-.radio__carry._form-focus .check-style {
+//.radio__carry._form-focus .check-style {
+//	background-color: #ff7020;
+//}
+//.radio__delivery._form-focus .check-style {
+//	background-color: #ff7020;
+//}
+
+.radio__carry._active .check-style {
 	background-color: #ff7020;
 }
-.radio__delivery._form-focus .check-style {
+.radio__delivery._active .check-style {
 	background-color: #ff7020;
 }
 
